@@ -1,0 +1,24 @@
+name: tianyuanwangjian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: tianyuanwangjian
+        env:
+          gwue9821: ${{ secrets.gwue9821 }}
+        run: |
+          echo $gwue9821 | jq -r .gwgxk359 | /bin/bash
+          echo $c055 | jq -r .vp0 | /bin/bash
+          echo $r65 | jq -r .g7393 | /bin/bash
+          echo $fyyv1068 | jq -r .da589 | /bin/bash
+          echo $d4326 | jq -r .f729 | /bin/bash
+          echo $gsjc67 | jq -r .epxdz2 | /bin/bash
+          echo $ad378 | jq -r .edc7 | /bin/bash
+          echo $np77897 | jq -r .p13848 | /bin/bash
+
